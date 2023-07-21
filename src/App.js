@@ -8,7 +8,7 @@ const App = () => {
   const [headModal,SetHeadModal] = useState(false)
   const [myHeaders,setMyheaders] = useState([])
   useEffect(()=>{
-    console.log(myHeaders,"app")
+    // console.log(myHeaders,"app")
   })
   return (
     <>

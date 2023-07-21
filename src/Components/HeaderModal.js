@@ -10,7 +10,7 @@ const HeaderModal = (props) => {
     event.preventDefault()
     if (header.length)
     {
-    let newHeader = {"header":header}
+    let newHeader = {header:header,id:new Date().getTime().toString()}
     // console.log(newHeader)
     setAllHeaders([...allHeaders,newHeader])
 
@@ -30,8 +30,7 @@ const HeaderModal = (props) => {
   useEffect(()=>{
     if (allHeaders.length){
       props.setMyheaders(allHeaders)
-      
-    console.log(allHeaders)}
+      }
   },[allHeaders])
   return (
     <div className='head-modal'>

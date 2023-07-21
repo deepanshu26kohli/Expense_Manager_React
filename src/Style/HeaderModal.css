@@ -1,12 +1,13 @@
 .head-modal{
     position:absolute;
     top:0;
-    background-color: rgb(214, 214, 214);
+    background-color: rgba(0, 0, 0, 0.1);
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .head-form{
     width: 30vw;
@@ -27,6 +28,7 @@
     top:0;
     right: 0;
     color: black;
+    z-index: 1;
 }
 .head-inp{
     /* background-color: black; */
