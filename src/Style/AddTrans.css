@@ -1,0 +1,41 @@
+.addTrans{
+ border: .1rem solid rgba(139, 139, 139, .5);
+ height: auto;
+ width: 25vw;
+ padding: 1rem 3rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: start;
+border-radius: .5rem;
+
+/* background-color: bisque; */
+}
+input{
+    /* border:none; */
+    outline: none;
+    padding: .5rem 1rem;
+}
+select{
+    /* border:none; */
+    outline: none;
+    padding: .5rem 1rem; 
+}
+button{
+    background-color: black;
+    color: white;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+.date{
+    margin-top: 1rem;
+}
+.plusbtn{
+    margin-left: 3rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}

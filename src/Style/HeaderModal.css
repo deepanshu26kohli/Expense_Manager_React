@@ -1,0 +1,40 @@
+.head-modal{
+    position:absolute;
+    top:0;
+    background-color: rgb(214, 214, 214);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head-form{
+    width: 30vw;
+    height: 20vh;
+    background-color: white;
+    position: relative;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.head-close{
+    background-color: white;
+    position: absolute;
+    top:0;
+    right: 0;
+    color: black;
+}
+.head-inp{
+    /* background-color: black; */
+    margin-left: 1rem;
+    height: 4vh;
+   
+    
+}
+.submit-head-btn{
+    height: 4vh;
+}

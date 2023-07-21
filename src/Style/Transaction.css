@@ -1,0 +1,9 @@
+.transaction{
+    /* background-color: chocolate; */
+    width: 100vw;
+    height: auto;
+    padding: 2rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

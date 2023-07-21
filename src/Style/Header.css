@@ -1,0 +1,22 @@
+.head{
+    width: 100vw;
+    height: 8vh;
+    /* background-color: black; */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+}
+.logo{
+    background-color: blue;
+    width: 10vw;
+    height: 5vh;
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+}

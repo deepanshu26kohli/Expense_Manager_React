@@ -1,0 +1,35 @@
+.main{
+    width: 100vw;
+    /* background-color: black; */
+    height: auto;
+    padding: 2rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.box{
+    height: auto;
+    width: 15vw;
+    /* background-color: blue; */
+    /* border: .1rem solid rgb(224, 0, 0); */
+    border-radius: .3rem;
+    text-align: center;
+    padding:1rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: .1rem .1rem .5rem rgb(126, 126, 126);
+}
+.balance{
+    background-color: rgba(100, 185, 90,.2);
+    border: .1rem solid green;
+}
+.income{
+    background-color: #bcd9ff;
+    border: .1rem solid blue;
+}
+.expense{
+    background-color: #ffbcbc;
+    border: .1rem solid rgb(128, 0, 0);
+}
