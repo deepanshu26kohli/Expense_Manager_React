@@ -1,5 +1,6 @@
 import React from 'react'
 import "../Style/AddTrans.css"
+
 const AddTrans = (props) => {
   
   return (
