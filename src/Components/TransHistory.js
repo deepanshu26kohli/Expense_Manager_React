@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../Style/TransHistory.css"
-const TransHistory = () => {
+const TransHistory = (props) => {
+    useEffect(()=>{
+        console.log(props.myAllTrans,"history")
+        
+    },[props.myAllTrans])
+    
     return (
         <div className='transHistory'>
             <h3>History</h3>
@@ -12,7 +17,15 @@ const TransHistory = () => {
                     <th>Type</th>
                     <th>Date</th>
                 </tr>
-                <tr><td>Salary</td><td>20</td><td>Income</td><td>xyz</td><td>❌</td>
+                {
+                    props.myAllTrans.map((e)=>{
+                       
+                        return <tr key={e.id}><td>{e.transHeader}</td><td>{e.amount}</td><td>{e.type}</td><td>{e.date}</td><td>❌</td>
+                        </tr>
+                    })
+                }
+                
+                {/* <tr><td>Salary</td><td>20</td><td>Income</td><td>xyz</td><td>❌</td>
                 </tr>
                 <tr><td>Salary</td><td>20</td><td>Income</td><td>xyz</td><td>❌</td>
                 </tr>
@@ -29,9 +42,7 @@ const TransHistory = () => {
                 <tr><td>Salary</td><td>20</td><td>Income</td><td>xyz</td><td>❌</td>
                 </tr>
                 <tr><td>Salary</td><td>20</td><td>Income</td><td>xyz</td><td>❌</td>
-                </tr>
-                <tr><td>Salary</td><td>20</td><td>Income</td><td>xyz</td><td>❌</td>
-                </tr>
+                </tr> */}
                 </tbody>
             </table>
            

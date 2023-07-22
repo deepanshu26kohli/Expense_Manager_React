@@ -1,5 +1,5 @@
 .head-modal{
-    position:absolute;
+    position:fixed;
     top:0;
     background-color: rgba(0, 0, 0, 0.1);
     width: 100vw;

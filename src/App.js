@@ -7,14 +7,16 @@ import HeaderModal from './Components/HeaderModal'
 const App = () => {
   const [headModal,SetHeadModal] = useState(false)
   const [myHeaders,setMyheaders] = useState([])
+  const [myAllTrans,setMyAlltrans] = useState([])
   useEffect(()=>{
     // console.log(myHeaders,"app")
+    // console.log(myAllTrans,"app")
   })
   return (
     <>
       <Header/>
       <Money/>
-      <Transaction myHeaders={myHeaders} setMyheaders={setMyheaders} setHeadModal = {SetHeadModal} headModal = {headModal}/>
+      <Transaction myAllTrans={myAllTrans} setMyAlltrans={setMyAlltrans} myHeaders={myHeaders} setMyheaders={setMyheaders} setHeadModal = {SetHeadModal} headModal = {headModal}/>
       { headModal && <HeaderModal myHeaders={myHeaders} setMyheaders={setMyheaders} setHeadModal = {SetHeadModal} headModal = {headModal}/>}
     </>
   )

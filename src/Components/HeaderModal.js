@@ -10,7 +10,7 @@ const HeaderModal = (props) => {
     event.preventDefault()
     if (header.length)
     {
-    let newHeader = {header:header,id:new Date().getTime().toString()}
+    let newHeader = {header:header,id:new Date().getTime()}
     // console.log(newHeader)
     setAllHeaders([...allHeaders,newHeader])
 

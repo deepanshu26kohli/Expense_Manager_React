@@ -6,8 +6,8 @@ import "../Style/Transaction.css"
 const Transaction = (props) => {
   return (
     <div className='transaction'>
-      <AddTrans  myHeaders={props.myHeaders} setMyheaders={props.setMyheaders} setHeadModal = {props.setHeadModal} headModal = {props.headModal}/>
-      <TransHistory/>
+      <AddTrans myAllTrans={props.myAllTrans} setMyAlltrans={props.setMyAlltrans}  myHeaders={props.myHeaders} setMyheaders={props.setMyheaders} setHeadModal = {props.setHeadModal} headModal = {props.headModal}/>
+      <TransHistory myAllTrans={props.myAllTrans} setMyAlltrans={props.setMyAlltrans}/>
     </div>
   )
 }

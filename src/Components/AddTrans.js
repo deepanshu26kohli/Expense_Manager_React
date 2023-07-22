@@ -2,19 +2,24 @@ import React, { useEffect, useState } from 'react'
 import "../Style/AddTrans.css"
 
 const AddTrans = (props) => {
-  useEffect(() => {
-    props.setMyheaders(props.myHeaders)
-  })
-  const [amount, setAmount] = useState(0)
+  
+    const [amount, setAmount] = useState(0)
     const [type, setType] = useState("")
     const [transHeader, setTransHeader] = useState("")
     const [date, setDate] = useState("")
     const [alltrans, setAllTrans] = useState([])
     const transHandle = (e) => {
       e.preventDefault()
-      const newTrans = { amount: amount, type: type, transHeader: transHeader, date: date }
+      const newTrans = { amount: amount, type: type, transHeader: transHeader, date: date , id : new Date().getTime() }
+      setAllTrans([...alltrans,newTrans])
       console.log(newTrans)
     }
+    useEffect(() => {
+      props.setMyheaders(props.myHeaders)
+      setAllTrans(alltrans)
+      props.setMyAlltrans(alltrans)
+      // console.log(alltrans,"All Transactions")
+    },)
  
   return (
     <form className='addTrans' onSubmit={transHandle}>
