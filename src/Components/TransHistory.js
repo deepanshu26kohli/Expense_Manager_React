@@ -25,24 +25,7 @@ const TransHistory = (props) => {
                     })
                 }
                 
-                {/* <tr><td>Salary</td><td>20</td><td>Income</td><td>xyz</td><td>❌</td>
-                </tr>
-                <tr><td>Salary</td><td>20</td><td>Income</td><td>xyz</td><td>❌</td>
-                </tr>
-                <tr><td>Salary</td><td>20</td><td>Income</td><td>xyz</td><td>❌</td>
-                </tr>
-                <tr><td>Salary</td><td>20</td><td>Income</td><td>xyz</td><td>❌</td>
-                </tr>
-                <tr><td>Salary</td><td>20</td><td>Income</td><td>xyz</td><td>❌</td>
-                </tr>
-                <tr><td>Salary</td><td>20</td><td>Income</td><td>xyz</td><td>❌</td>
-                </tr>
-                <tr><td>Salary</td><td>20</td><td>Income</td><td>xyz</td><td>❌</td>
-                </tr>
-                <tr><td>Salary</td><td>20</td><td>Income</td><td>xyz</td><td>❌</td>
-                </tr>
-                <tr><td>Salary</td><td>20</td><td>Income</td><td>xyz</td><td>❌</td>
-                </tr> */}
+            
                 </tbody>
             </table>
            
